@@ -1,0 +1,127 @@
+CRITICAL - 2022-01-24 08:13:59 --> Undefined variable $simpan_session
+#0 C:\xampp\htdocs\logincoba\app\Controllers\Login.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 63)
+#1 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\logincoba\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-24 08:18:00 --> Undefined variable $googleButton
+#0 C:\xampp\htdocs\logincoba\app\Views\login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 29)
+#1 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('login', Array, true)
+#4 C:\xampp\htdocs\logincoba\app\Controllers\Login.php(65): view('login', Array)
+#5 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Login->index()
+#6 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\logincoba\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-01-24 08:20:42 --> {
+  "error": {
+    "code": 401,
+    "message": "Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "errors": [
+      {
+        "message": "Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+        "domain": "global",
+        "reason": "unauthorized"
+      }
+    ],
+    "status": "UNAUTHENTICATED"
+  }
+}
+
+#0 C:\xampp\htdocs\logincoba\app\Libraries\vendor\google\apiclient\src\Http\REST.php(103): Google\Http\REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\...')
+#1 [internal function]: Google\Http\REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\...')
+#2 C:\xampp\htdocs\logincoba\app\Libraries\vendor\google\apiclient\src\Task\Runner.php(182): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\logincoba\app\Libraries\vendor\google\apiclient\src\Http\REST.php(66): Google\Task\Runner->run()
+#4 C:\xampp\htdocs\logincoba\app\Libraries\vendor\google\apiclient\src\Client.php(918): Google\Http\REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\...', Array, NULL)
+#5 C:\xampp\htdocs\logincoba\app\Libraries\vendor\google\apiclient\src\Service\Resource.php(238): Google\Client->execute(Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\...')
+#6 C:\xampp\htdocs\logincoba\app\Libraries\vendor\google\apiclient-services\src\Oauth2\Resource\Userinfo.php(42): Google\Service\Resource->call('get', Array, 'Google\\Service\\...')
+#7 C:\xampp\htdocs\logincoba\app\Controllers\Login.php(34): Google\Service\Oauth2\Resource\Userinfo->get()
+#8 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Login->index()
+#9 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\logincoba\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2022-01-24 08:24:13 --> {
+  "error": {
+    "code": 401,
+    "message": "Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "errors": [
+      {
+        "message": "Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+        "domain": "global",
+        "reason": "unauthorized"
+      }
+    ],
+    "status": "UNAUTHENTICATED"
+  }
+}
+
+#0 C:\xampp\htdocs\logincoba\app\Libraries\vendor\google\apiclient\src\Http\REST.php(103): Google\Http\REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\...')
+#1 [internal function]: Google\Http\REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\...')
+#2 C:\xampp\htdocs\logincoba\app\Libraries\vendor\google\apiclient\src\Task\Runner.php(182): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\logincoba\app\Libraries\vendor\google\apiclient\src\Http\REST.php(66): Google\Task\Runner->run()
+#4 C:\xampp\htdocs\logincoba\app\Libraries\vendor\google\apiclient\src\Client.php(918): Google\Http\REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\...', Array, NULL)
+#5 C:\xampp\htdocs\logincoba\app\Libraries\vendor\google\apiclient\src\Service\Resource.php(238): Google\Client->execute(Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\...')
+#6 C:\xampp\htdocs\logincoba\app\Libraries\vendor\google\apiclient-services\src\Oauth2\Resource\Userinfo.php(42): Google\Service\Resource->call('get', Array, 'Google\\Service\\...')
+#7 C:\xampp\htdocs\logincoba\app\Controllers\Login.php(34): Google\Service\Oauth2\Resource\Userinfo->get()
+#8 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Login->index()
+#9 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\logincoba\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2022-01-24 21:10:18 --> Undefined property: App\Controllers\Login::$Model_Login
+#0 C:\xampp\htdocs\logincoba\app\Controllers\Login.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Login->index()
+#2 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\logincoba\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-01-24 21:10:57 --> {
+  "error": {
+    "code": 401,
+    "message": "Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "errors": [
+      {
+        "message": "Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+        "domain": "global",
+        "reason": "unauthorized"
+      }
+    ],
+    "status": "UNAUTHENTICATED"
+  }
+}
+
+#0 C:\xampp\htdocs\logincoba\app\Libraries\vendor\google\apiclient\src\Http\REST.php(103): Google\Http\REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\...')
+#1 [internal function]: Google\Http\REST::doExecute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\...')
+#2 C:\xampp\htdocs\logincoba\app\Libraries\vendor\google\apiclient\src\Task\Runner.php(182): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\logincoba\app\Libraries\vendor\google\apiclient\src\Http\REST.php(66): Google\Task\Runner->run()
+#4 C:\xampp\htdocs\logincoba\app\Libraries\vendor\google\apiclient\src\Client.php(918): Google\Http\REST::execute(Object(GuzzleHttp\Client), Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\...', Array, NULL)
+#5 C:\xampp\htdocs\logincoba\app\Libraries\vendor\google\apiclient\src\Service\Resource.php(238): Google\Client->execute(Object(GuzzleHttp\Psr7\Request), 'Google\\Service\\...')
+#6 C:\xampp\htdocs\logincoba\app\Libraries\vendor\google\apiclient-services\src\Oauth2\Resource\Userinfo.php(42): Google\Service\Resource->call('get', Array, 'Google\\Service\\...')
+#7 C:\xampp\htdocs\logincoba\app\Controllers\Login.php(34): Google\Service\Oauth2\Resource\Userinfo->get()
+#8 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Login->index()
+#9 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#10 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\logincoba\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2022-01-24 21:46:40 --> Undefined variable $googleButton
+#0 C:\xampp\htdocs\logincoba\app\Views\login.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 29)
+#1 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('login', Array, true)
+#4 C:\xampp\htdocs\logincoba\app\Controllers\Login.php(51): view('login', Array)
+#5 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\CodeIgniter.php(825): App\Controllers\Login->index()
+#6 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\logincoba\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\logincoba\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}

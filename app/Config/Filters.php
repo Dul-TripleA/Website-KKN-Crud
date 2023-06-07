@@ -2,6 +2,7 @@
 
 namespace Config;
 
+use App\Filters\Filter;
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
@@ -23,6 +24,7 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+        'filter' => Filter::class
     ];
 
     /**
@@ -36,11 +38,17 @@ class Filters extends BaseConfig
             // 'honeypot',
             // 'csrf',
             // 'invalidchars',
+            'filter' =>  ['except' => [
+                '/', '/Home', 'login/', '/login/cek_login', 'Berita/informasi','Berita/*' ,'Berita/kategori','Berita/read', 'Galeri/dokumentasi', 'About/Desa_Salam', 'Contact/salam', 'Lisensi/'
+            ]],
         ],
         'after' => [
             'toolbar',
             // 'honeypot',
             // 'secureheaders',
+            'filter' =>  ['except' => [
+                '/','Home/' ,'Home/*', 'login/*','Admin/','Admin/*', 'Berita/','Berita/*', 'Galeri/','Galeri/*', 'Contact/','Contact/*', 'About/','About/*', 'Kategori/','Kategori/*','Lisensi/', 'PerangkatDesa/','PerangkatDesa/*', 'Setting/','Setting/*','DataAdmin/','DataAdmin/*'
+            ]],
         ],
     ];
 
@@ -49,7 +57,11 @@ class Filters extends BaseConfig
      * particular HTTP method (GET, POST, etc.).
      *
      * Example:
-     * 'post' => ['csrf', 'throttle']
+     * 'post' => ['foo', 'bar']
+     *
+     * If you use this, you should disable auto-routing because auto-routing
+     * permits any HTTP method to access a controller. Accessing the controller
+     * with a method you don’t expect could bypass the filter.
      *
      * @var array
      */
